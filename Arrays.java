@@ -68,7 +68,7 @@ class Arrays {
 		
 		//Заполнение массива
 		for(int i = 0; i < 5; i++)
-			for(k=0; k<10; k++)
+			for(int k=0; k<10; k++)
 				 riders[i][k]= i + k + 10;
 	        for(int i = 5; i<7; i++)
 	       		for(int k=0; k<2; k++)
@@ -162,7 +162,7 @@ class Arrays {
                 System.out.println();
 
 		System.out.println();
-		//Переменная экземпляра lenght
+		//Переменная экземпляра length
 		int[] list = new int[10];
 		int[] nums4 = {1,2,3};
 		int[][] table1 = {
@@ -170,19 +170,68 @@ class Arrays {
 			{4,5},
 			{6,7,8,9}
 		};
-		System.out.println("Длина list: " + list.lenght);
-		System.out.println("Длина nums4: " + nums4.lenght);
-		System.out.println("Длина table1: " + table1.lenght);
-		System.out.println("Длина table1[0]: " + table1[0].lenght);
-		System.out.println("Длина table1[1]: " + table1[1].lenght);
-		System.out.println("Длина table1[2]: " + table1[2].lenght);
-		System.out.println("Длина table1[3]: " + table1[3].lenght);
+		System.out.println("Длина list: " + list.length);
+		System.out.println("Длина nums4: " + nums4.length);
+		System.out.println("Длина table1: " + table1.length);
+		System.out.println("Длина table1[0]: " + table1[0].length);
+		System.out.println("Длина table1[1]: " + table1[1].length);
+		System.out.println("Длина table1[2]: " + table1[2].length);
+		System.out.println("Длина table1[3]: " + table1[3].length);
 		
+		//Цикл for-each
+		System.out.println();
+		int[] nums5 = {1,2,3,4,5,6,7,8,9,10,11,12};
+		int sum = 0;
 
-             }
+		for(int x1 : nums5) {
+			System.out.println("Значение: " + x1);
+			sum += x1;
+			if(x1 == 5)
+				break;
+
+		}
+		System.out.println("Сумма первых шести элементов массива nums5: " + sum);
+		
+		System.out.println();
+		//Подсчёт суммы элементов в двумерном массиве
+		int sum1 = 0;
+		int[][] nums6 = new int[3][5];
+
+		for(int i=0; i<num6.length; i++)
+			for (int j1=0; j1< num6[i].lenght; j1++)
+				nums6[i][j1] = (i+1)*(j1+1);
+		//Выводим элементы массивы и считаем сумму
+		for(int[] x1 : nums6)
+                        for (int y : x1) {
+				System.out.println("Значение: " + y);
+				sum1 += y;
+			}
+		System.out.println("Сумма: " + sum1);
+ 			
+		System.out.println();
+		//Поиск при помощи цикла for-each
+		int val = 9;
+		boolean found = false;
+
+		for(int x1 : num5) {
+			if(x1 == val) {
+				found = true;
+				break;
+			}
+		}
+		if(found)
+			System.out.println("Значение " + val + " найдено");
+		else
+			System.out.println("Значение " + val + "не найдено");
 
 	}
 
+
+
 }
 
-		
+
+
+
+	
+
