@@ -42,7 +42,7 @@ class ByRef {
 	}
 }
 class ErrorMsg {
-	String[] msg = {
+	String[] msgs = {
 		"Ошибка вывода",
 		"Ошибка ввода",
 		"Переполнение диска",
@@ -110,8 +110,8 @@ class pr004 {
 		//Демонстрация возврата строки методом
 		ErrorMsg err = new ErrorMsg();
 
-		System.out.println(err.getError.Msg(2));
-		System.out.println(err.getError.Msg(10));
+		System.out.println(err.getErrorMsg(2));
+		System.out.println(err.getErrorMsg(10));
 		
 		System.out.println();
 		//Демонастрация возврата методом объекта, сконструированного из строки и целого числа
